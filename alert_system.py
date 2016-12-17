@@ -11,7 +11,7 @@ from pygame import mixer
 def alertme(sleeptime, NumOfAlarms):
     """The function **alertme** performs *sleeps number of seconds as supplied via sleeptime variable*
     TESTING:
-    >>> alertme(30)
+    >>> alertme(30, 10)
     Going to wait for 30 seconds.
     Alarm time!! Ten alarms to start.
     Press Control+C to stop the alarm.
@@ -25,7 +25,7 @@ def alertme(sleeptime, NumOfAlarms):
         return
     mixer.init()
     mixer.music.load('/home/sid/PycharmProjects/Utilities/244932__kwahmah-02__short-buzzer.wav')
-    print('Alarm time!! Ten alarms to start.')
+    print('Alarm time!! {} alarms to start.'.format(NumOfAlarms))
     print('Press Control+C to stop the alarm.')
     try:
         for r in range(NumOfAlarms):
