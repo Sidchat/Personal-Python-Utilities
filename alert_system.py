@@ -12,9 +12,11 @@ def alertme(sleeptime, NumOfAlarms):
     """The function **alertme** performs *sleeps number of seconds as supplied via sleeptime variable*
     TESTING:
     >>> alertme(30, 10)
+    Current time is Sat Dec 17 12:44:41 2016
     Going to wait for 30 seconds.
-    Alarm time!! Ten alarms to start.
+    Alarm time!! 10 alarms to start.
     Press Control+C to stop the alarm.
+   ^CAlarm stopped. Thank you.
     """
     print('Current time is {}'.format(time.ctime()))
     print("Going to wait for "+str(sleeptime)+' seconds.')
